@@ -1,0 +1,75 @@
+#traversal in array data structure
+'''arr=list(map(int,input("Enter array elements: ").split()))
+print("array elements added by 100")
+for num in arr:
+    print(num+100,end=" ")'''
+
+'''arr=list(map(int,input("Enter array elements: ").split()))
+max=arr[0]
+#to find maximum value
+for i in arr:
+    if i>max:
+        max=i
+print("Maximum value:",max)
+min=arr[0]
+#to find minimum value
+for i in arr:
+    if i<min:
+        min=i
+print("Minimun value:",min)'''
+
+'''
+rows=int(input("enter the no of rows:"))
+print("enter matrix elements")
+arr=[]
+for i in range(rows):
+    row=list(map(int,input().split()))
+    arr.append(row)
+
+min=max=arr[0][0]
+for i in range(rows):
+    for j in range(rows):
+        if arr[i][j]>max:
+            max=arr[i][j]
+        if arr[i][j]<min:
+            min=arr[i][j]
+print("Maximum value:",max)
+print("Minimun value:",min)
+'''
+
+#to print matrix in single line
+'''r=int(input("Enter the row:"))
+c=int(input("Enter the col:"))
+arr=[]
+for i in range(r):
+    row=list(map(int,input().split()))
+    arr.append(row)
+for i in range(r):
+    for j in range(c):
+        print(arr[i][j],end=' ')'''
+
+#enter matrix in single line and print in matrix format
+'''r=int(input("Enter the row:"))
+c=int(input("Enter the col:"))
+l=list(map(int,input().split()))
+matrix=[]
+x=0
+for i in range(r):
+    row=[]
+    for j in range(c):
+        row.append(l[x])
+        x+=1
+    matrix.append(row)
+for row in matrix:
+    print(*row)'''
+            #(or)
+
+'''r = int(input("enter row size: "))
+c = int(input("enter col size: "))
+array = list(map(int, input("enter all elements: ").split()))
+for i in range(r):
+    for j in range(c):
+        print(array[i* c+ j], end=" ")
+print()'''
+
+
